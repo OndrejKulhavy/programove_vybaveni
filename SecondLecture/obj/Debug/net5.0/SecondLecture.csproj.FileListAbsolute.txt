@@ -1,0 +1,16 @@
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.exe
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.deps.json
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.runtimeconfig.json
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.runtimeconfig.dev.json
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\bin\Debug\net5.0\SecondLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.csproj.AssemblyReference.cache
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.AssemblyInfoInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.AssemblyInfo.cs
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.csproj.CoreCompileInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\refint\SecondLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\SecondLecture.genruntimeconfig.cache
+D:\SPSE Jecna\Programove_vybaveni\SecondLecture\obj\Debug\net5.0\ref\SecondLecture.dll

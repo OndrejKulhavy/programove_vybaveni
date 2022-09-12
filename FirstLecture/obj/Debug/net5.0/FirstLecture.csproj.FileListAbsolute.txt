@@ -1,0 +1,16 @@
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.exe
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.deps.json
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.runtimeconfig.json
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.runtimeconfig.dev.json
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\bin\Debug\net5.0\FirstLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.csproj.AssemblyReference.cache
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.AssemblyInfoInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.AssemblyInfo.cs
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.csproj.CoreCompileInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\refint\FirstLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\FirstLecture.genruntimeconfig.cache
+D:\SPSE Jecna\Programove_vybaveni\FirstLecture\obj\Debug\net5.0\ref\FirstLecture.dll
