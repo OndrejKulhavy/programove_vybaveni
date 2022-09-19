@@ -1,0 +1,16 @@
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.exe
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.deps.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.runtimeconfig.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.runtimeconfig.dev.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\bin\Debug\net5.0\ThirdLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.csproj.AssemblyReference.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.AssemblyInfoInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.AssemblyInfo.cs
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.csproj.CoreCompileInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\refint\ThirdLecture.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ThirdLecture.genruntimeconfig.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\ThirdLecture\obj\Debug\net5.0\ref\ThirdLecture.dll
