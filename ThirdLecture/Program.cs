@@ -24,6 +24,15 @@ namespace ThirdLecture
                 Console.WriteLine(svetec);
             }
 
+
+            Console.WriteLine("--------");
+            Ucet ucet = new Ucet(false, "Dominik Procházka");
+            Console.WriteLine(ucet);
+            Console.WriteLine("--------");
+            UrocenyUcet urocenyUcet = new UrocenyUcet(false, 0.05, "Dominik Procházka");
+            Console.WriteLine(urocenyUcet);
+            Console.WriteLine("--------");
+            PlacenyUrocenyUcet placenyUrocenyUcet = new PlacenyUrocenyUcet(false, 0.05, 100, "Dominik Procházka");
         }
     }
 }
