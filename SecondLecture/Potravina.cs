@@ -84,4 +84,7 @@ public class Potravina
             return energy / DAILY_INTAKE_KJ;
         }
     }
+
+    //to string
+    
 }

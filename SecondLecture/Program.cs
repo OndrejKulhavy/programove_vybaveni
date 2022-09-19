@@ -15,6 +15,7 @@ namespace SecondLecture
             Console.WriteLine(interval.IsIN(3));
             Console.WriteLine(interval.IsIN(6));
             Console.WriteLine(interval.Intersection(new Interval(2, 4)));
+            Console.WriteLine(interval);
 
             Primka primka = new Primka(1,4);
 

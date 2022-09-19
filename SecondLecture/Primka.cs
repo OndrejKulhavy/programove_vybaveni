@@ -34,4 +34,5 @@ public class Primka
     {
         return Math.Abs(pointA - pointB);
     }
+
 }

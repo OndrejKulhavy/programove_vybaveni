@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\SPSE Jecna\\Programove_vybaveni\\SecondLecture\\SecondLecture.csproj",
+      "projectUniqueName": "D:\\SPSE Jecna\\Programove_vybaveni\\programove_vybaveni\\SecondLecture\\SecondLecture.csproj",
       "projectName": "SecondLecture",
-      "projectPath": "D:\\SPSE Jecna\\Programove_vybaveni\\SecondLecture\\SecondLecture.csproj",
+      "projectPath": "D:\\SPSE Jecna\\Programove_vybaveni\\programove_vybaveni\\SecondLecture\\SecondLecture.csproj",
       "packagesPath": "C:\\Users\\culha\\.nuget\\packages\\",
-      "outputPath": "D:\\SPSE Jecna\\Programove_vybaveni\\SecondLecture\\obj\\",
+      "outputPath": "D:\\SPSE Jecna\\Programove_vybaveni\\programove_vybaveni\\SecondLecture\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\culha\\AppData\\Roaming\\NuGet\\NuGet.Config"
