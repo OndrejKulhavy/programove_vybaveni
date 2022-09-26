@@ -6,7 +6,7 @@ namespace Test_26._09
     {
         static void Main(string[] args)
         {
-            StrelnaZbran zbran = new StrelnaZbran(10, 5);
+            StrelnaZbran zbran = new StrelnaZbran(10, 5, false);
             Console.WriteLine("Strilim");
             zbran.Vystrel();
             Console.WriteLine(zbran);

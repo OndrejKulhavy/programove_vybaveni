@@ -36,10 +36,11 @@ namespace Test_26._09
             }
         }
 
-        public StrelnaZbran(int velikostZasobniku, int pocetNaboju)
+        public StrelnaZbran(int velikostZasobniku, int pocetNaboju, bool zaseknuta)
         {
             VelikostZasobniku = velikostZasobniku;
             PocetNaboju = pocetNaboju;
+            this.zaseknuta = zaseknuta;
         }
 
         public void Vystrel()
