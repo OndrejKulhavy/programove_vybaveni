@@ -8,9 +8,12 @@ namespace Test_10._10
         {
             Lod lodHelena = new Lod("Helena", 40);
             Plachetnice plachetniceVlastovka = new Plachetnice("Vlaštovka", 8, true);
+
             lodHelena.Rychlost = -20;
+
             Majitel m1 = new Majitel("Jan", "Novák", lodHelena);
             Majitel m2 = new Majitel("Karel", "Sýkora", plachetniceVlastovka);
+            
             Console.WriteLine(m1);
             Console.WriteLine(m2);
 
