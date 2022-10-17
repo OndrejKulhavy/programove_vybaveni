@@ -31,10 +31,14 @@ class SeznamUdalosti
         List<Udalost> vysledek = new List<Udalost>();
         foreach (Udalost udalost in seznam)
         {
-            if (udalost.Typ == typ && udalost.Uroven == uroven)
-            {
+            if (Typ.ANY == typ && udalost.Uroven == uroven)
                 vysledek.Add(udalost);
-            }
+            if (udalost.Typ == typ && Uroven.ANY == uroven)
+                vysledek.Add(udalost);
+            if (Typ.ANY == typ && Uroven.ANY == uroven)
+                vysledek.Add(udalost);
+            if (udalost.Typ == typ && udalost.Uroven == uroven)
+                vysledek.Add(udalost);
         }
 
         return vysledek;

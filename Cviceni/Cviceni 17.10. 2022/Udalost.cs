@@ -9,7 +9,12 @@ class Udalost
     public Typ Typ
     {
         get { return typ; }
-        set { typ = value; }
+        set 
+        {
+            if (value == Typ.ANY)
+                throw new ArgumentException("Typ nemuze byt ANY");
+            typ = value; 
+        }
     }
 
     public string Popis
@@ -21,7 +26,12 @@ class Udalost
     public Uroven Uroven
     {
         get { return uroven; }
-        set { uroven = value; }
+        set
+        {
+            if (value == Uroven.ANY)
+                throw new ArgumentException("Uroven nemuze byt ANY");
+            uroven = value;
+        }
     }
 
     public Udalost(Typ typ, string popis, Uroven uroven)

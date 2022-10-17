@@ -10,7 +10,7 @@ namespace Cviceni_17._10._2022
             SeznamUdalosti seznamUdalosti = new SeznamUdalosti();
             seznamUdalosti.PridejUdalost(new Udalost(Typ.APLIKACNI, "Pozorovani", Uroven.INFORMACE));
             seznamUdalosti.PridejUdalost(new Udalost(Typ.SYSTEMOVA, "Pozorovani", Uroven.VAROVANI));
-            seznamUdalosti.PridejUdalost(new Udalost(Typ.HARDWAROVA, "Pozorovani", Uroven.CHYBA));
+            seznamUdalosti.PridejUdalost(new Udalost(Typ.APLIKACNI, "Pozorovani", Uroven.CHYBA));
             seznamUdalosti.PridejUdalost(new Udalost(Typ.APLIKACNI, "Pozorovani", Uroven.INFORMACE));
             seznamUdalosti.PridejUdalost(new Udalost(Typ.SYSTEMOVA, "Pozorovani", Uroven.VAROVANI));
             seznamUdalosti.PridejUdalost(new Udalost(Typ.HARDWAROVA, "Pozorovani", Uroven.CHYBA));
@@ -24,7 +24,7 @@ namespace Cviceni_17._10._2022
             Console.WriteLine("Nefiltrovano");
             Console.WriteLine(seznamUdalosti.ToString());
             Console.WriteLine("Filtrovano");
-            Console.WriteLine(seznamUdalosti.FiltrToString(Typ.APLIKACNI, Uroven.INFORMACE));
+            Console.WriteLine(seznamUdalosti.FiltrToString(Typ.ANY, Uroven.CHYBA));
         }
     }
 }

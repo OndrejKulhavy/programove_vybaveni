@@ -1,5 +1,6 @@
 public enum Uroven{
     INFORMACE,
     VAROVANI,
-    CHYBA
+    CHYBA,
+    ANY
 }

@@ -2,5 +2,6 @@ public enum Typ
 {
     SYSTEMOVA,
     HARDWAROVA,
-    APLIKACNI
+    APLIKACNI,
+    ANY
 }
