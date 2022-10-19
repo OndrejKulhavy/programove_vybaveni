@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "Ukol_17_10_2022/1.0.0": {
+        "runtime": {
+          "Ukol_17_10_2022.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ukol_17_10_2022/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
