@@ -8,15 +8,36 @@ namespace Ukol_17_10_2022
         static void Main(string[] args)
         {
             Slovnik slovnik = new Slovnik();
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "auto", "vozidlo" }, new List<string>() { "car", "vehicle" }));
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "ahoj", "dobrý den" }, new List<string>() { "hi", "hello", "good day" }));
 
-            foreach (Slovo slovo in slovnik.ObsahSlovniku)
+            // přídání slov do slovníku
+            slovnik.PridejSlovo(new Slovo(new List<string>() { "auto", "vozidlo" }, new List<string>() { "car", "vehicle" }));
+            slovnik.PridejSlovo(new Slovo(new List<string>() { "ahoj", "dobrý den" }, new List<string>() { "hi", "hello"}));
+            slovnik.PridejSlovo(new Slovo(new List<string>() { "traktor" }, new List<string>() { "tractor"}));
+            slovnik.PridejSlovo(new Slovo(new List<string>() { "pivo" }, new List<string>() { "beer"}));
+
+
+            // výpis slovníku
+            foreach (Slovo slovo in slovnik.ListSlov)
             {
                 Console.WriteLine(slovo);
             }
 
-            Console.WriteLine("Nalezeno: " + slovnik.NajdiSlovo("car", Jazyky.ANGLICKY)[0]);
+
+            /*---- vyhledávání překladu slova ----*/
+
+            // Najde anglické slovo "hi" a vypíše české překlady
+            Console.WriteLine("Nalezeno: ");
+            foreach (string slovo in slovnik.NajdiSlovo("hi", Jazyk.en))
+            {
+                Console.WriteLine(slovo);
+            }
+
+            // Najde české slovo "vozidlo" a vypíše anglické překlady
+            Console.WriteLine("Nalezeno: ");
+            foreach (string slovo in slovnik.NajdiSlovo("vozidlo", Jazyk.cs))
+            {
+                Console.WriteLine(slovo);
+            }
         }
     }
 }

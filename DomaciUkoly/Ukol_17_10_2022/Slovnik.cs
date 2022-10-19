@@ -5,24 +5,32 @@ namespace Ukol_17_10_2022
 {
     class Slovnik
     {
-        List<Slovo> slovnik = new List<Slovo>();
+        List<Slovo> listSlov = new List<Slovo>();
 
-        public List<Slovo> ObsahSlovniku
+        // get a set pro slovnik
+        public List<Slovo> ListSlov
         {
-            get { return slovnik; }
-            set { slovnik = value; }
+            get { return listSlov; }
+            set { listSlov = value; }
         }
+
+        // metoda pro přidání slova do slovníku
         public void PridejSlovo(Slovo slovo)
         {
-            slovnik.Add(slovo);
+            listSlov.Add(slovo);
         }
 
-        public List<string> NajdiSlovo(string slovo, Jazyky jazyk)
+        // metoda pro vyhledání slova v slovníku
+        public List<string> NajdiSlovo(string slovo, Jazyk jazyk)
         {
             List<string> vysledek = new List<string>();
-            foreach (Slovo slovoVListu in slovnik)
+
+            foreach (Slovo slovoVListu in listSlov)
             {
-                if (jazyk == Jazyky.CESKY)
+                // pokud je jazyk nastaven na češtinu
+                // a slovo je v seznamu českých slov
+                // přidej slovo do výsledku
+                if (jazyk == Jazyk.cs)
                 {
                     foreach (string ceskeSlovo in slovoVListu.Ceske)
                     {
@@ -32,6 +40,9 @@ namespace Ukol_17_10_2022
                         }
                     }
                 }
+                // pokud je jazyk nastaven na angličtinu
+                // a slovo je v seznamu anglických slov
+                // přidej slovo do výsledku
                 else
                 {
                     foreach (string anglickeSlovo in slovoVListu.Anglicke)

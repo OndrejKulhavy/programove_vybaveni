@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace Ukol_17_10_2022
 {
-    public enum Jazyky
+    public enum Jazyk
 {
-    CESKY,
-    ANGLICKY
+    cs,
+    en
 }
 }
