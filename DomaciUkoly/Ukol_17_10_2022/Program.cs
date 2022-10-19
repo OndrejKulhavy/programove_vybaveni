@@ -10,10 +10,23 @@ namespace Ukol_17_10_2022
             Slovnik slovnik = new Slovnik();
 
             // přídání slov do slovníku
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "auto", "vozidlo" }, new List<string>() { "car", "vehicle" }));
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "ahoj", "dobrý den" }, new List<string>() { "hi", "hello"}));
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "traktor" }, new List<string>() { "tractor"}));
-            slovnik.PridejSlovo(new Slovo(new List<string>() { "pivo" }, new List<string>() { "beer"}));
+            slovnik.PridejSlovo(new Slovo(
+                new List<string>() { "auto", "vozidlo" }, 
+                new List<string>() { "car", "vehicle" }));
+
+            slovnik.PridejSlovo(new Slovo(
+                new List<string>() { "ahoj", "dobrý den" },
+                 new List<string>() { "hi", "hello"}));
+
+            slovnik.PridejSlovo(new Slovo(
+                new List<string>() { "traktor" }, 
+                new List<string>() { "tractor"}));
+
+            slovnik.PridejSlovo(
+                new Slovo(
+                    new List<string>() { "pivo" },
+                    new List<string>() { "beer"}
+                ));
 
 
             // výpis slovníku
