@@ -7,20 +7,20 @@ namespace Ukol_17_10_2022
     {
         List<Slovo> listSlov = new List<Slovo>();
 
-        // get a set pro slovnik
+        // get a set pro listSlov
         public List<Slovo> ListSlov
         {
             get { return listSlov; }
             set { listSlov = value; }
         }
 
-        // metoda pro přidání slova do slovníku
+        // metoda pro přidání slova do slovníku (listu slov)
         public void PridejSlovo(Slovo slovo)
         {
             listSlov.Add(slovo);
         }
 
-        // metoda pro vyhledání slova v slovníku
+        // metoda pro vyhledání slova v slovníku (listu slov)
         public List<string> NajdiSlovo(string slovo, Jazyk jazyk)
         {
             List<string> vysledek = new List<string>();
