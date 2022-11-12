@@ -11,7 +11,7 @@ namespace Cviceni_07._11._2022
     class Policko
     {
         #region Vlastnosti
-        private Karkulka karkulka = null;
+        protected Karkulka karkulka = null;
 
         private Typ typ;
         #endregion
@@ -48,9 +48,9 @@ namespace Cviceni_07._11._2022
         #region Metody
 
 
-        public virtual void SplnUcel()
+        public virtual bool SplnUcel()
         {
-            
+            return true;
         }
 
         public override string ToString()

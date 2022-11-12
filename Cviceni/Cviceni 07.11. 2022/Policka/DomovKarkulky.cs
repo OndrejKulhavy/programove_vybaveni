@@ -7,9 +7,9 @@ using Cviceni_07._11._2022.Enums;
 
 namespace Cviceni_07._11._2022.Policka
 {
-    class Kamen : Policko
+    class DomovKarkulky : Policko
     {
-        public Kamen() : base(Typ.KAMEN)
+        public DomovKarkulky() : base(Typ.DOMECEK_KARKULKY)
         {
 
         }
@@ -20,7 +20,7 @@ namespace Cviceni_07._11._2022.Policka
             {
                 return "💃";
             }
-            return "🟥";
+            return "🏯";
         }
 
     }

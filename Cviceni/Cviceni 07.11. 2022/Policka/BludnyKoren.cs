@@ -1,39 +1,47 @@
-using Cviceni_07._11._2022.Enums;
-using Cviceni_07._11._2022.Policka;
 using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+using Cviceni_07._11._2022.Enums;
 
 namespace Cviceni_07._11._2022.Policka
 {
     class BludnyKoren : Policko
     {
-        private List<QandA> otazkyAodovedi = new List<QandA>();
-        public BludnyKoren() : base(Typ.BLUDNY_KOREN)
+        Hra hra;
+        public BludnyKoren(Hra hra) : base(Typ.BLUDNY_KOREN)
         {
-            otazkyAodovedi.Add(new QandA("Kolik je 2+2?", "4"));
-            otazkyAodovedi.Add(new QandA("Kolik je 2+3?", "5"));
-            otazkyAodovedi.Add(new QandA("Kolik je 2+4?", "6"));
-            otazkyAodovedi.Add(new QandA("Kolik je 2+5?", "7"));
-            otazkyAodovedi.Add(new QandA("Kolik je 2+6?", "8"));
-            otazkyAodovedi.Add(new QandA("Kolik je 2+7?", "9"));
+            Hra = hra;
         }
 
-        public override void SplnUcel()
+        public Hra Hra { get => hra; set => hra = value; }
+        public override bool SplnUcel()
         {
-            Random random = new Random();
-            int index = random.Next(0, otazkyAodovedi.Count);
             Console.WriteLine("Bludny koren");
-            Console.WriteLine("Otazka: " + otazkyAodovedi[index].Question);
-            string odpoved = Console.ReadLine();
-            if (odpoved == otazkyAodovedi[index].Answer)
+            Console.WriteLine("Budeš přemístěn/a na náhodné políčko o kolo kořene!");
+            Console.WriteLine("     Stiskni jakoukoliv klávesu pro pokračování");
+            Console.ReadKey();
+
+            Random rnd = new Random();
+            int nahodneCislo = rnd.Next(0, 4);
+            switch (nahodneCislo)
             {
-                Console.WriteLine("Spravna odpoved");
-                otazkyAodovedi.RemoveAt(index);
+                case 0:
+                    Hra.PohniKarkulkou(Smer.NAHORU);
+                    break;
+                case 1:
+                    Hra.PohniKarkulkou(Smer.DOLU);
+                    break;
+                case 2:
+                    Hra.PohniKarkulkou(Smer.VPRAVO);
+                    break;
+                case 3:
+                    Hra.PohniKarkulkou(Smer.VLEVO);
+                    break;
             }
-            else
-            {
-                Console.WriteLine("Spatna odpoved");
-            }
+
+            return true;
         }
 
         public override string ToString()
@@ -42,7 +50,8 @@ namespace Cviceni_07._11._2022.Policka
             {
                 return "💃";
             }
-            return "🌲";
+            return "🌳";
         }
+
     }
 }

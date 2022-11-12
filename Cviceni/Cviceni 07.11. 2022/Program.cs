@@ -8,34 +8,28 @@ namespace Cviceni_07._11._2022
     {
         static void Main(string[] args)
         {
-
-            
             Hra hra = new Hra();
-            hra.Vypis();
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            while (hra.HraBezi == true)
+            {
+                Console.Clear();
+                hra.Vypis();
+                Console.WriteLine("Zadejte pohyb (nahoru, dolu, doprava, doleva): ");
+                string smer = Console.ReadLine();
+                try
+                {
+                    hra.PohniKarkulkou(smer);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Něco se pokazilo: " + e.Message);
+                    Console.ReadKey();
+                }
+            }
             Console.WriteLine();
-            hra.Vypis();
+            Console.WriteLine("Konec hry.");
 
-            hra.PridatSpecialniPolicko(Typ.DOMECEK_BABICKY);
-            Console.WriteLine();
-            hra.Vypis();
 
-            hra.PohniKarkulkou(Smer.VLEVO);
-            Console.WriteLine();
-            hra.Vypis();
-
-
-            hra.PohniKarkulkou(Smer.NAHORU);
-            Console.WriteLine();
-            hra.Vypis();
-            hra.PohniKarkulkou(Smer.VLEVO);
-            Console.WriteLine();
-            hra.Vypis();
-            hra.PohniKarkulkou(Smer.VLEVO);
-            Console.WriteLine();
-            hra.Vypis();
-            hra.PohniKarkulkou(Smer.VLEVO);
-            Console.WriteLine();
-            hra.Vypis();
 
         }
 

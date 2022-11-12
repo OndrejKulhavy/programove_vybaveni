@@ -16,6 +16,8 @@ namespace Cviceni_07._11._2022
 
         private int velikost = 16;
 
+        private bool hraBezi = true;
+
         #endregion
 
         #region Gettery a settery
@@ -25,6 +27,11 @@ namespace Cviceni_07._11._2022
             set { velikost = value; }
         }
 
+        public bool HraBezi
+        {
+            get { return hraBezi; }
+            set { hraBezi = value; }
+        }
         public int PoziceKarkulkyX
         {
             get { return poziceKarkulkyX; }
@@ -49,6 +56,8 @@ namespace Cviceni_07._11._2022
         {
             VytvorHraciPole();
             PridatKarkulku();
+            PridatSpecialniPolicko(new Vlk());
+            PridatSpecialniPolicko(new DomovBabicky());
         }
         #endregion
 
@@ -57,19 +66,52 @@ namespace Cviceni_07._11._2022
 
         private void VytvorHraciPole()
         {
+            Random random = new Random();
             hraciPole = new Policko[velikost, velikost];
             for (int i = 0; i < hraciPole.GetLength(0); i++)
             {
                 for (int j = 0; j < hraciPole.GetLength(1); j++)
                 {   //na vsechny krajni policka se vlozi policko typu kamen
                     if (i == 0 || i == hraciPole.GetLength(0) - 1 || j == 0 || j == hraciPole.GetLength(1) - 1)
-                        hraciPole[i, j] = new Policko(Typ.KAMEN);
+                        hraciPole[i, j] = new Kamen();
                     else
-                        hraciPole[i, j] = new Policko(Typ.VYHLIDKA);
+                    {
+                        int nahodneCislo = random.Next(0, 10);
+                        switch (nahodneCislo)
+                        {
+                            case 0:
+                                hraciPole[i, j] = new Vyhlidka();
+                                break;
+                            case 1:
+                                hraciPole[i, j] = new BludnyKoren(this);
+                                break;
+                            case 2:
+                                hraciPole[i, j] = new KvetinovaLouka();
+                                break;
+                            case 3:
+                                hraciPole[i, j] = new Prekazka();
+                                break;
+                            default:
+                                hraciPole[i, j] = new Vyhlidka();
+                                break;
+                        }
+                    }
+
                 }
             }
         }
 
+        public void PohniKarkulkou(string smer)
+        {
+            if (smer.Equals("nahoru"))
+                PohniKarkulkou(Smer.NAHORU);
+            else if (smer.Equals("dolu"))
+                PohniKarkulkou(Smer.DOLU);
+            else if (smer.Equals("doleva"))
+                PohniKarkulkou(Smer.VLEVO);
+            else if (smer.Equals("doprava"))
+                PohniKarkulkou(Smer.VPRAVO);
+        }
         public void PohniKarkulkou(Smer smer)
         {
             //zkopirovani karkulky
@@ -80,25 +122,31 @@ namespace Cviceni_07._11._2022
                     if (HraciPole[poziceKarkulkyX, poziceKarkulkyY - 1].Typ == Typ.KAMEN)
                         throw new Exception("Karkulka se nemuze pohnout"); //karkulka je stuck
                     else
-                        Move(0,-1,karkulka);
+                        Move(0, -1, karkulka);
+                    HraBezi = hraciPole[poziceKarkulkyX, poziceKarkulkyY].SplnUcel();
                     break;
                 case Smer.VPRAVO:
                     if (HraciPole[poziceKarkulkyX, poziceKarkulkyY + 1].Typ == Typ.KAMEN)
                         throw new Exception("Karkulka se nemuze pohnout");
                     else
-                        Move(0,1, karkulka);
+                        Move(0, 1, karkulka);
+                    HraBezi = hraciPole[poziceKarkulkyX, poziceKarkulkyY].SplnUcel();
+
                     break;
                 case Smer.NAHORU:
                     if (HraciPole[poziceKarkulkyX - 1, poziceKarkulkyY].Typ == Typ.KAMEN)
                         throw new Exception("Karkulka se nemuze pohnout");
                     else
-                        Move(-1,0, karkulka);
+                        Move(-1, 0, karkulka);
+                    HraBezi = hraciPole[poziceKarkulkyX, poziceKarkulkyY].SplnUcel();
+
                     break;
                 case Smer.DOLU:
                     if (HraciPole[poziceKarkulkyX + 1, poziceKarkulkyY].Typ == Typ.KAMEN)
                         throw new Exception("Karkulka se nemuze pohnout");
                     else
-                        Move(1,0, karkulka);
+                        Move(1, 0, karkulka);
+                    HraBezi = hraciPole[poziceKarkulkyX, poziceKarkulkyY].SplnUcel();
                     break;
                 default:
                     throw new Exception("Neznamy smer");
@@ -116,16 +164,6 @@ namespace Cviceni_07._11._2022
             hraciPole[poziceKarkulkyX, poziceKarkulkyY].Karkulka = karkulka;
         }
 
-        public void PridatSpecialniPolicko(Typ typ)
-        {
-            Random random = new Random();
-            int x = random.Next(0, velikost);
-            int y = random.Next(0, velikost);
-            //ohlida zda se nevytvori specialni policko na jiz existujicim specialnim poli
-            if (HraciPole[x, y].Typ == Typ.VYHLIDKA) HraciPole[x, y].Typ = typ;
-            else PridatSpecialniPolicko(typ);
-        }
-
         private void PridatKarkulku()
         {
             Random random = new Random();
@@ -133,7 +171,7 @@ namespace Cviceni_07._11._2022
             int y = random.Next(0, velikost);
             if (!(hraciPole[x, y].Typ == Typ.KAMEN))
             {
-                hraciPole[x, y].Typ = Typ.DOMECEK_KARKULKY;
+                hraciPole[x, y] = new DomovKarkulky();
                 hraciPole[x, y].Karkulka = new Karkulka();
                 PoziceKarkulkyX = x;
                 PoziceKarkulkyY = y;
@@ -143,10 +181,29 @@ namespace Cviceni_07._11._2022
             else PridatKarkulku();
         }
 
+        private void PridatSpecialniPolicko(Policko policko)
+        {
+            Random random = new Random();
+            int x = random.Next(0, velikost);
+            int y = random.Next(0, velikost);
+            if (!(hraciPole[x, y].Typ == Typ.KAMEN))
+            {
+                hraciPole[x, y] = policko;
+            }
+            else PridatSpecialniPolicko(policko);
+        }
+
 
 
         public void Vypis()
         {
+            Console.Write("Darky: ");
+            int pocetDarku = hraciPole[poziceKarkulkyX, poziceKarkulkyY].Karkulka.PocetDarku;
+            for (int i = 0; i < pocetDarku; i++)
+            {
+                Console.Write("🎁 ");
+            }
+            Console.WriteLine();
             for (int i = 0; i < hraciPole.GetLength(0); i++)
             {
                 for (int j = 0; j < hraciPole.GetLength(1); j++)
