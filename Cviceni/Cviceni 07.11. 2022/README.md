@@ -1,4 +1,6 @@
 # Hra karkulka
+![image](https://user-images.githubusercontent.com/48098372/201496544-7194dc21-93e3-423d-9801-393fe1106d2c.png)
+
 ## Požadavky 💻
 - **[Nový Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab)**
 - .NET Core
