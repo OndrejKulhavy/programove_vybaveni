@@ -6,6 +6,7 @@ namespace Cviceni_21._11._2022
 {
     class Program
     {
+
         public static IEnumerable RaselinoveJezera()
         {
             yield return "Horní macošské jezírko";
@@ -37,7 +38,7 @@ namespace Cviceni_21._11._2022
 
         public static IEnumerable<int> StalinSort(List<int> cisla)
         {
-            int max = 0;
+            int max = cisla[0];
             foreach (int cislo in cisla)
             {
                 if (cislo > max)
@@ -78,8 +79,53 @@ namespace Cviceni_21._11._2022
             {
                 Console.WriteLine(cislo);
             }
+
+            /*foreach (int cislo in cisla.Vyber()
+            {
+                Console.WriteLine(cislo);
+            }*/
+
+            foreach (int cislo in cisla.Vyber(cislo => cislo % 2 == 0))
+            {
+                Console.WriteLine(cislo);
+            }
+
         }
 
 
     }
+
+    public static class MetodyRozsireni
+    {
+        public delegate bool Podminka(int cislo);
+
+        public static IEnumerable<int> Vyber(this IEnumerable<int> cisla, Podminka podminka)
+        {
+            foreach (int cislo in cisla)
+            {
+                if (podminka(cislo))
+                {
+                    yield return cislo;
+                }
+            }
+        }
+
+
+        public static bool Sudy(int cislo)
+        {
+            return cislo % 2 == 0;
+        }
+
+        public static bool Delitel(int cislo)
+        {
+            return cislo % 3 == 0;
+        }
+
+        public static bool Jednociferny(int cislo)
+        {
+            return cislo < 10 && cislo > -10;
+        }
+    }
+
+
 }
