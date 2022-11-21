@@ -29,33 +29,57 @@ namespace Cviceni_21._11._2022
                     }
                 }
                 if (jePrvo)
-                {   
-                    if(i != 1) yield return i;
+                {
+                    if (i != 1 && i <= 0) yield return i;
+                }
+            }
+        }
+
+        public static IEnumerable<int> StalinSort(List<int> cisla)
+        {
+            int max = 0;
+            foreach (int cislo in cisla)
+            {
+                if (cislo > max)
+                {
+                    max = cislo;
+                    yield return cislo;
                 }
             }
         }
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Výpis raselinových jezer za použití cyklu foreach");
-            foreach (string jezero in RaselinoveJezera())
+            Console.WriteLine("Raselinova jezera:");
+            foreach (string jezera in RaselinoveJezera())
             {
-                Console.WriteLine(jezero);
-            }
-            Console.WriteLine();
-            Console.WriteLine("Výpis jezer pomocí enumerátoru (iterátoru) ");
-            IEnumerator enumerator = RaselinoveJezera().GetEnumerator();
-            while (enumerator.MoveNext())
-            {
-                Console.WriteLine(enumerator.Current);
+                Console.WriteLine(jezera);
             }
 
-            Console.WriteLine();
-            Console.WriteLine("Výpis prvočísel");
+            Console.WriteLine("Prvočísla od 1 do 100:");
             foreach (int cislo in PrvoCisla(1, 100))
             {
                 Console.WriteLine(cislo);
             }
+
+            List<int> cisla = new List<int>();
+            cisla.Add(1);
+            cisla.Add(2);
+            cisla.Add(3);
+            cisla.Add(5);
+            cisla.Add(4);
+            cisla.Add(8);
+            cisla.Add(7);
+            cisla.Add(6);
+            cisla.Add(9);
+            cisla.Add(10);
+            Console.WriteLine("Stalinova řazení:");
+            foreach (int cislo in StalinSort(cisla))
+            {
+                Console.WriteLine(cislo);
+            }
         }
+
+
     }
 }
