@@ -17,7 +17,7 @@ namespace Cviceni_07._11._2022.Policka
         public override bool SplnUcel()
         {
             karkulka.PotkalaVlka();
-            return false;
+            return true;
         }
 
         public override string ToString()
