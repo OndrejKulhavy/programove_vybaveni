@@ -1,0 +1,16 @@
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.exe
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.deps.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.runtimeconfig.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.runtimeconfig.dev.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\bin\Debug\net5.0\28_11_2022.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.csproj.AssemblyReference.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.AssemblyInfoInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.AssemblyInfo.cs
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.csproj.CoreCompileInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\refint\28_11_2022.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\28_11_2022.genruntimeconfig.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Testy\28_11_2022\obj\Debug\net5.0\ref\28_11_2022.dll
