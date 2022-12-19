@@ -11,6 +11,8 @@ namespace Test_19_12_2022
 
         public List<Platba> Platby { get => platby; set => platby = value; }
 
+        public Banka(){}
+
         public void PridatPlatbu(Platba platba)
         {
             Platby.Add(platba);
