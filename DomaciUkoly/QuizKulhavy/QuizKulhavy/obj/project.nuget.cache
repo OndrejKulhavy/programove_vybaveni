@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "Usf1kq+ri+WrGUcYPCuGNuT38gr3V9Yf7TetBFl+tzOFOrInJlkvmUNsJb2WHf6AHXbzUhSw+uBGceeRAuaiXA==",
+  "dgSpecHash": "IVhNvlknV86xplkWQHZcpDdoizkzNj+xIG2GB5StQqKTdFsl7D6VYvlDryachjmHzx3FbGw1mfJAfDjjxa6aAg==",
   "success": true,
   "projectFilePath": "D:\\SPSE Jecna\\Programove_vybaveni\\programove_vybaveni\\DomaciUkoly\\QuizKulhavy\\QuizKulhavy\\QuizKulhavy.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\culha\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+  ],
   "logs": []
 }

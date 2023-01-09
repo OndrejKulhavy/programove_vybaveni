@@ -1,0 +1,13 @@
+[
+  {
+    "Id": 1,
+    "Question": "Kdo bude prezidentem?",
+    "Options": [
+      "Petr Pavel",
+      "Danuše Nerudova"
+    ],
+    "Answer": [
+      "Andrejko"
+    ]
+  }
+]

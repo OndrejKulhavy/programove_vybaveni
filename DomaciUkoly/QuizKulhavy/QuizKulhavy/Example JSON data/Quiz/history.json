@@ -1,0 +1,106 @@
+[
+  {
+    "Id": 1,
+    "Question": "Who was president of the United States?",
+    "Options": [
+      "Donald Trump",
+      "George Washington",
+      "Thomas Jefferson",
+      "John Quincy Adams"
+    ],
+    "Answer": [
+      "George Washington",
+      "Donald Trump"
+    ]
+  },
+  {
+    "Id": 2,
+    "Question": "Who was the leader of the Soviet Union during World War II?",
+    "Options": [
+      "Joseph Stalin",
+      "Nikita Khrushchev",
+      "Leon Trotsky",
+      "Mikhail Gorbachev"
+    ],
+    "Answer": [
+      "Joseph Stalin"
+    ]
+  },
+  {
+    "Id": 3,
+    "Question": "Which of the following events occurred first?",
+    "Options": [
+      "The signing of the Magna Carta",
+      "The discovery of America by Columbus",
+      "The fall of the Berlin Wall",
+      "The assassination of Julius Caesar"
+    ],
+    "Answer": [
+      "The signing of the Magna Carta"
+    ]
+  },
+  {
+    "Id": 4,
+    "Question": "Which of the following wars took place first?",
+    "Options": [
+      "World War I",
+      "World War II",
+      "Vietnam War",
+      "Korean War"
+    ],
+    "Answer": [
+      "World War I"
+    ]
+  },
+  {
+    "Id": 5,
+    "Question": "Who was the first man to set foot on the moon?",
+    "Options": [
+      "Neil Armstrong",
+      "Buzz Aldrin",
+      "Pete Conrad",
+      "Alan Bean"
+    ],
+    "Answer": [
+      "Neil Armstrong"
+    ]
+  },
+  {
+    "Id": 6,
+    "Question": "Which of the following empires existed first?",
+    "Options": [
+      "Roman Empire",
+      "British Empire",
+      "Mongol Empire",
+      "Ottoman Empire"
+    ],
+    "Answer": [
+      "Mongol Empire"
+    ]
+  },
+  {
+    "Id": 7,
+    "Question": "Who was the first king of England?",
+    "Options": [
+      "Henry VIII",
+      "Edward IV",
+      "George III",
+      "William the Conqueror"
+    ],
+    "Answer": [
+      "William the Conqueror"
+    ]
+  },
+  {
+    "Id": 8,
+    "Question": "Who is president of the USA in 2023?",
+    "Options": [
+      "Petr Pavel",
+      "Danuše Nerudová",
+      "Joe Biden"
+    ],
+    "Answer": [
+      "Joe Biden"
+    ]
+  }
+]
