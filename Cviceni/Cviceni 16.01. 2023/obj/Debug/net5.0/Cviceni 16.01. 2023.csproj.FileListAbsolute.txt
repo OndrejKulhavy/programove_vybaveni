@@ -1,0 +1,16 @@
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.exe
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.deps.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.runtimeconfig.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.runtimeconfig.dev.json
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\bin\Debug\net5.0\Cviceni 16.01. 2023.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.csproj.AssemblyReference.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.GeneratedMSBuildEditorConfig.editorconfig
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.AssemblyInfoInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.AssemblyInfo.cs
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.csproj.CoreCompileInputs.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\refint\Cviceni 16.01. 2023.dll
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.pdb
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\Cviceni 16.01. 2023.genruntimeconfig.cache
+D:\SPSE Jecna\Programove_vybaveni\programove_vybaveni\Cviceni\Cviceni 16.01. 2023\obj\Debug\net5.0\ref\Cviceni 16.01. 2023.dll
