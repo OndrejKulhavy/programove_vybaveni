@@ -62,8 +62,7 @@ namespace Cviceni_23._01._2023
                 isLoggedIn = false;
             }
 
-            string currentDirectory = System.IO.Directory.GetCurrentDirectory();
-            System.IO.File.AppendAllText(currentDirectory + "\\logins.txt", userName + " " +isLoggedIn+ " " + DateTime.Now + Environment.NewLine);
+            System.IO.File.AppendAllText(Program.PATH + "\\logins.txt", userName + " " +isLoggedIn+ " " + DateTime.Now + Environment.NewLine);
         }
 
         #region Password management

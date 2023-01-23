@@ -6,4 +6,8 @@
     <RootNamespace>Cviceni_23._01._2023</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="7.0.0" />
+  </ItemGroup>
+
 </Project>

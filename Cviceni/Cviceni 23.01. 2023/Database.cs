@@ -82,14 +82,12 @@ namespace Cviceni_23._01._2023
             json = JsonSerializer.Serialize(users);
             //save json to file
 
-            string currentDirectory = System.IO.Directory.GetCurrentDirectory();
-            System.IO.File.WriteAllText(currentDirectory + "\\users.json", json);
+            System.IO.File.WriteAllText(Program.PATH + "\\users.json", json);
         }
 
         public void LoadFromFile()
         {
-            string currentDirectory = System.IO.Directory.GetCurrentDirectory();
-            string json = System.IO.File.ReadAllText(currentDirectory + "\\users.json");
+            string json = System.IO.File.ReadAllText(Program.PATH+ "\\users.json");
             users = JsonSerializer.Deserialize<List<User>>(json);
         }
 

@@ -1,11 +1,16 @@
 ﻿using System;
+using System.Configuration;
+using System.IO;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Cviceni_23._01._2023
 {
     class Program
     {
+        public static string PATH;
         static void Main(string[] args)
         {
+            PATH = ReadSettings("dir");
             Database database = new Database();
             bool isRunning = true;
             while (isRunning)
@@ -39,6 +44,13 @@ namespace Cviceni_23._01._2023
                 Console.WriteLine("Stisknete libovolnou klavesu pro pokracovani");
                 Console.ReadKey();
             }
+        }
+        
+        private static string ReadSettings(string key)
+        {
+            var appSettings = ConfigurationManager.AppSettings;
+            string result = appSettings[key] ?? "Not found";
+            return result;
         }
     }
 }
