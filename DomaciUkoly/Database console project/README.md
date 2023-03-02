@@ -2,6 +2,8 @@
 
 This is a simple C# console application for a car service system. It was developed as a homework assignment for a school project.
 
+![img](docs/img.png)
+
 ### Description
 
 The application connects to a database using Microsoft.Data.SqlClient and provides functionality for adding, updating, and deleting customers. It also has the ability to create a new table for customers, check if the table exists, and add customer data from a JSON file.
